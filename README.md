@@ -18,7 +18,7 @@
 
 ```
 //本人常用的
- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+ <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
 ```
 ```
@@ -41,4 +41,28 @@ user-scalable=yes：表示用户是否可以调整缩放比例
 
 ```
 
-### 三、设计移动web
+### 三、移动端布局
+> 不用固定布局
+
+1. 响应式布局
+2. flex弹性布局
+
+### 四、文本溢出
+
+```
+    .box{
+        //单行文本溢出
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+
+        //多行文本溢出
+        display: -webkit-box !important;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-break: break-all;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+    }
+    
+```
